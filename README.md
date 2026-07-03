@@ -87,11 +87,15 @@ By continuously blending a fractional percentage of the policy weights into the 
 
 ### 1.2. Double Deep Q Network
 The Double DQN addresses the **Maximization Bias** inherent in standard DQN which mitigates this bias by decoupling action selection from action evaluation- the online policy network selects the best action, but the frozen target network evaluates the true $Q$-value of that specific action.
+```
 
-<img src="https://render.githubusercontent.com/render/math?math=Q_{target} = R %2B \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{policy}(s', a'))" alt="Q_target formula">
-```
 Q_{target} = R + \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{policy}(s', a'))
+
 ```
+
+$Q_{target} = R + \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{policy}(s', a'))$
+
+
 <figure style="text-align: center;">
   <img src="resources\DDQN\DDQN_Acrobot_1.png" alt="Baseline DDQN">
   <figcaption><i><b>Figure 1.2.1.</b> Total Rewards per Episode </i></figcaption>
