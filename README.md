@@ -93,8 +93,6 @@ Q_{target} = R + \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{polic
 
 ```
 
-$Q_{target} = R + \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{policy}(s', a'))$
-
 
 <figure style="text-align: center;">
   <img src="resources\DDQN\DDQN_Acrobot_1.png" alt="Baseline DDQN">
