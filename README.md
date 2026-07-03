@@ -90,6 +90,8 @@ The Double DQN addresses the **Maximization Bias** inherent in standard DQN whic
 
 <img src="https://render.githubusercontent.com/render/math?math=Q_{target} = R %2B \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{policy}(s', a'))" alt="Q_target formula">
 
+Q_{target} = R + \gamma \cdot Q_{target}(s', \operatorname{argmax}_{a'} Q_{policy}(s', a'))
+
 <figure style="text-align: center;">
   <img src="resources\DDQN\DDQN_Acrobot_1.png" alt="Baseline DDQN">
   <figcaption><i><b>Figure 1.2.1.</b> Total Rewards per Episode </i></figcaption>
